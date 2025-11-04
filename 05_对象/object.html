@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*
+            对象是js中的一个复合数据类型
+        */
+       let obj = Object()
+       obj.name = "xiaowang"
+       obj.age = 11111110
+       obj.gender = "沃尔玛塑料袋"
+       obj.none = true
+    // ddd   console.log(obj);
+       
+       let name = obj.name
+    //    console.log(name);
+
+       delete obj.none
+    //    console.log(obj);
+
+       obj.age = 123456789
+    //    console.log(obj);
+
+         /*
+            一般情况下，属性可以随意命名
+            太特殊用[]
+        */  
+       obj.asfkjghjlkafsh363gj77453klafshgkjalfs = 1
+       console.log(obj.asfkjghjlkafsh363gj77453klafshgkjalfs);
+       
+       obj["asfkjghjlkafshgjklafshgkjalfs"] = 1
+       console.log(obj["asfkjghjlkafshgjklafshgkjalfs"]);
+       
+          /*
+           用symbol做为属性名
+        */        
+       let asymbbol = Symbol()
+        obj[asymbbol] = "symbol as a object name"
+        console.log(obj[asymbbol]);
+        
+        /*
+           用变量添加属性
+        */   
+       let dk = "dknow"
+        obj.dk = "walawala"
+        console.log(obj);
+        
+        /*
+           in
+        */   
+    </script>
+</body>
+</html>
