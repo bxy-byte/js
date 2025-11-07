@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=>, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
 <body>
@@ -43,7 +43,7 @@
         obj[asymbbol] = "symbol as a object name"
       //   console.log(obj[asymbbol]);
         
-        /*
+         /*
            用变量添加属性
         */   
        let dk = "dknow"
@@ -84,19 +84,31 @@
         */   
        let obj3 = Object()
        obj3.name = "name3"
-       console.log(obj3);
+      //  console.log(obj3);
        
 
        let obj4 = Object()
        let obj5 = Object()
-       console.log(obj4===obj5);
+      //  console.log(obj4===obj5);
 
        let obj6 = obj3
-       obj6.name = "name6"
-       console.log(obj3
-
-       );
+      //  obj6.name = "name6"
+      //  console.log(obj3);
        
+      obj6 = {name : "name6"}//obj6指向了一个新的对象
+      // obj6.name = "name6"
+      // console.log(obj3);
+      // console.log(obj6);
+      /*
+       定义对象用const
+      */
+     const obj7 = obj3
+     obj7 = {}
+    //  console.log(obj7);
+     
+    
+      
+      
        
 
     </script>
